@@ -110,7 +110,7 @@
 ![Question 1 part 2](images/question1.jpg)
 
 - [ ] Storage account type: Standard general-purpose v2. Configuration: NFSv3.
-- [x] Storage account type: Standard general-purpose v2. Configuration: Hierarchical namespace.
+- [ ] Storage account type: Standard general-purpose v2. Configuration: Hierarchical namespace.
 - [ ] Storage account type: Premium page blobs. Configuration: Hierarchical namespace.
 - [ ] Storage account type: Premium file shares. Configuration: NFSv3.
 
@@ -119,13 +119,13 @@
 Management groups:
 
 - [ ] 1.
-- [x] 2.
+- [ ] 2.
 - [ ] 3.
 - [ ] 4.
 
 Bluepprint definitions:
 
-- [x] 1.
+- [ ] 1.
 - [ ] 2.
 - [ ] 3.
 - [ ] 4.
@@ -133,7 +133,7 @@ Bluepprint definitions:
 Bluepprint assignments:
 
 - [ ] 1.
-- [x] 2.
+- [ ] 2.
 - [ ] 3.
 - [ ] 4.
 
@@ -145,7 +145,7 @@ Bluepprint assignments:
 ![Question 2](images/question2.jpg)
 
 - [ ] Service: Azure Automation. Feature: Access reviews.
-- [x] Service: The Azure AD Privileged Identity Management (PIM). Feature: Access reviews.
+- [ ] Service: The Azure AD Privileged Identity Management (PIM). Feature: Access reviews.
 - [ ] Service: The Azure AD Privileged Identity Management (PIM). Feature: Approvals.
 - [ ] Service: Azure Automation. Feature: Runbooks.
 
@@ -159,7 +159,7 @@ Bluepprint assignments:
 - [ ] From the SQL Server 2012 database: Data Migration Assistant. From the table in the SQL Server 2014 database: AzCopy.
 - [ ] From the SQL Server 2012 database: Data Management Gateway. From the table in the SQL Server 2014 database: Data Migration Assistant.
 - [ ] From the SQL Server 2012 database: Azure Cosmos DB Data Migration Tool. From the table in the SQL Server 2014 database: Data Migration Assistant.
-- [x] From the SQL Server 2012 database: Data Migration Assistant. From the table in the SQL Server 2014 database: Azure Cosmos DB Data Migration Tool.
+- [ ] From the SQL Server 2012 database: Data Migration Assistant. From the table in the SQL Server 2014 database: Azure Cosmos DB Data Migration Tool.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -170,14 +170,14 @@ Bluepprint assignments:
 
 - [ ] Security: Azure AD Privileged Identity Management. Development: Azure AD Connect. Quality Assurance: Azure AD Identity Protection.
 - [ ] Security: Azure AD Identity Protection. Development: Azure AD Connect. Quality Assurance: Privileged Identity Management.
-- [x] Security: Azure AD Privileged Identity Management. Development: Azure Managed Identity. Quality Assurance: Azure AD Privileged Identity Management.
+- [ ] Security: Azure AD Privileged Identity Management. Development: Azure Managed Identity. Quality Assurance: Azure AD Privileged Identity Management.
 - [ ] Security: Azure AD Identity Protection. Development: Azure AD Managed Service Identity. Quality Assurance: Azure AD Connect.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### The on-premises network contains a single Active Directory domain named contoso.com. Contoso has a single Azure subscription. Contoso has a business partnership with Fabrikam, Inc. Fabrikam users access some Contoso applications over the internet by using Azure Active Directory (Azure AD) guest accounts. Contoso plans to deploy two applications named App1 and App2 to Azure. App1 will be a Python web app hosted in Azure App Service that requires a Linux runtime. Users from Contoso and Fabrikam will access App1. App1 will access several services that require third-party credentials and access strings. The credentials and access strings are stored in Azure Key Vault. App1 will have six instances: three in the East US Azure region and three in the West Europe Azure region. App1 has the following data requirements: Each instance will write data to a data store in the same availability zone as the instance. Data written by any App1 instance must be visible to all App1 instances. App1 will only be accessible from the internet. App1 has the following connection requirements: Connections to App1 must pass through a web application firewall (WAF). Connections to App1 must be active-active load balanced between instances. All connections to App1 from North America must be directed to the East US region. All other connections must be directed to the West Europe region. Every hour, you will run a maintenance task by invoking a PowerShell script that copies files from all the App1 instances. The PowerShell script will run from a central location. App2 will be a NET app hosted in App Service that requires a Windows runtime. App2 has the following file storage requirements: Save files to an Azure Storage account. Replicate files to an on-premises location. Ensure that on-premises clients can read the files over the LAN by using the SMB protocol. You need to monitor App2 to analyze how long it takes to perform different transactions within the application. The solution must not require changes to the application code. Application developers will constantly develop new versions of App1 and App2. The development process must meet the following requirements: A staging instance of a new application version must be deployed to the application host before the new version is used in production. After testing the new version, the staging version of the application will replace the production version. The switch to the new application version from staging to production must occur without any downtime of the application. Contoso identifies the following requirements for managing Fabrikam access to resources: Every month, an account manager at Fabrikam must review which Fabrikam users have access permissions to App1. Accounts that no longer need permissions must be removed as guests. The solution must minimize development effort. All secrets used by Azure services must be stored in Azure Key Vault. Services that require credentials must have the credentials tied to the service instance. The credentials must NOT be shared between services. You need to recommend a solution that meets the data requirements for App1. What should you recommend deploying to each availability zone that contains an instance of App1?
 
-- [x] An Azure Cosmos DB that uses multi-region writes.
+- [ ] An Azure Cosmos DB that uses multi-region writes.
 - [ ] An Azure Storage account that uses geo-zone-redundant storage (GZRS).
 - [ ] An Azure Data Lake store that uses geo-zone-redundant storage (GZRS).
 - [ ] An Azure SQL database that uses active geo-replication.
@@ -186,7 +186,7 @@ Bluepprint assignments:
 
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam, Berlin, and Rome. The network contains two Active Directory forests named corp.fabrikam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of WebApp1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years, including virtual machines that rely on Active Directory for authentication. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft 365 deployment. All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Website content must be easily updated from a single point. User input must be minimized when provisioning new web app instances. Whenever possible, existing on-premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using the Standard pricing tier of Azure App Service. An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. In the event that a link fails between Azure and the on-premises network, ensure that the virtual machines hosted in Azure can authenticate to Active Directory. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabrikam.com must not be affected by a link failure between Azure and the on- premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirements. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication (MFA). The testing of WebApp1 updates must not be visible to anyone outside the company. You need to recommend a solution to meet the database retention requirements. What should you recommend?
 
-- [x] Configure a long-term retention policy for the database.
+- [ ] Configure a long-term retention policy for the database.
 - [ ] Configure Azure Site Recovery.
 - [ ] Configure geo replication of the database.
 - [ ] Use automatic Azure SQL Database backups.
@@ -199,7 +199,7 @@ Bluepprint assignments:
 
 - [ ] Authenticate App1 by using: A service principal. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
 - [ ] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
-- [x] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
+- [ ] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
 - [ ] Authenticate App1 by using: A service principal. Authorize App1 to retrieve Key Vault secrets by using: An access policy.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -208,7 +208,7 @@ Bluepprint assignments:
 
 ![Question 9](images/question9.jpg)
 
-- [x] Azure Traffic Manager: 1. Azure Application Gateway: 2.
+- [ ] Azure Traffic Manager: 1. Azure Application Gateway: 2.
 - [ ] Azure Traffic Manager: 3. Azure Application Gateway: 1.
 - [ ] Azure Traffic Manager: 6. Azure Application Gateway: 3.
 - [ ] Azure Traffic Manager: 1. Azure Application Gateway: 6.
@@ -221,14 +221,14 @@ Bluepprint assignments:
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic. Does this meet the goal?
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager resource deployment in your subscription. What should you include in the recommendation?
 
-- [x] Azure Log Activity.
+- [ ] Azure Log Activity.
 - [ ] Azure Monitor action groups.
 - [ ] Azure Advisor.
 - [ ] Azure Arc.
@@ -240,7 +240,7 @@ Bluepprint assignments:
 ![Question 13](images/question13.jpg)
 
 - [ ] Storage account type: BlobStorage. Storage service: File.
-- [x] Storage account type: BlockBlobStorage. Storage service: Blob.
+- [ ] Storage account type: BlockBlobStorage. Storage service: Blob.
 - [ ] Storage account type: StorageV.2 with Premium performance. Storage service: Table.
 - [ ] Storage account type: BlockBlobStorage. Storage service: Table.
 
@@ -250,7 +250,7 @@ Bluepprint assignments:
 
 ![Question 14](images/question14.jpg)
 
-- [x] Application1: BlockBlobStorage with Premium performance and Zone-redundant storage (ZRS) replication. Application2: General purpose v2 with Standard performance, Cool access tier,
+- [ ] Application1: BlockBlobStorage with Premium performance and Zone-redundant storage (ZRS) replication. Application2: General purpose v2 with Standard performance, Cool access tier,
 and Read-access geo-redundant storage (RA-GRS) replication.
 - [ ] Application1: BlobStorage with Standard performance, Hot access tier, and Read-access geo-redundant storage (RA-GRS) replication. Application2: General purpose v1 with Standard performance and Read-access geo-redundant storage (RA-GRS) replication.
 - [ ] Application1: BlockBlobStorage with Premium performance and Zone-redundant storage (ZRS) replication. Application2: BlobStorage with Standard performance, Cool access tier, and Geo redundant storage (GRS) replicaton.
@@ -265,7 +265,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Minimum number of Azure AD tenants: 2. Minimum number of custom domains to add: 4. Minimum number of conditional access policies to create: 1
 - [ ] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1 Minimum number of conditional access policies to create: 0.
-- [x] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1. Minimum number of conditional access policies to create: 2.
+- [ ] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1. Minimum number of conditional access policies to create: 2.
 - [ ] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1. Minimum number of conditional access policies to create: 1.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -275,7 +275,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 16](images/question16.jpeg)
 
 - [ ] Box 1: Azure Event Grid. Box 2: Azure Functions.
-- [x] Box 1: Azure Event Hubs. Box 2: Azure Functions.
+- [ ] Box 1: Azure Event Hubs. Box 2: Azure Functions.
 - [ ] Box 1: Azure Notification Hubs. Box 2: Azure Log Analytics.
 - [ ] Box1: Azure Notification Hubs. Box 2: Azure Functions.
 
@@ -286,7 +286,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 17 part 1](images/question1_17_19_20_30_41.jpg)
 ![Question 17 part 2](images/question17.jpg)
 
-- [x] Database: An Azure SQL Database elastic pool. Service tier: Business Critical.
+- [ ] Database: An Azure SQL Database elastic pool. Service tier: Business Critical.
 - [ ] Database: Azure SQL Managed Instance. Service tier: Business Critical.
 - [ ] Database: An Azure SQL Database elastic pool. Service tier: Hyperscale.
 - [ ] Database: Azure SQL Managed Instance. Service tier: Business Critical.
@@ -298,7 +298,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Create a runbook that resizes virtual machines automatically to a smaller size outside of business hours.
 - [ ] Configure the Scale Up settings for a web app.
 - [ ] Deploy a virtual machine scale set that scales out on a 75 percent CPU threshold.
-- [x] Configure the Scale Out settings for a web app.
+- [ ] Configure the Scale Out settings for a web app.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -309,7 +309,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Azure Instance Metadata Service (IMDS).
 - [ ] Azure AD.
 - [ ] Azure Service Management.
-- [x] Microsoft identity platform.
+- [ ] Microsoft identity platform.
 
 **[⬆ Back to Top](#table-of-contents)
 
@@ -318,7 +318,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 21](images/question21.jpg)
 
 - [ ] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Sign-in nsk policy in Azure AD Identity Protection for the Litware.com tenant.
-- [x] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Grant control in capolicy1.
+- [ ] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Grant control in capolicy1.
 - [ ] To register the users for Azure MFA, use:Secunty defaults in Azure AD. configure: Session control in capolicy1.
 - [ ] To register the users for Azure MFA, use: Per-user MFA in the MFA management Ul. configure: Grant control in capolicy1.
 
@@ -328,7 +328,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] One App Service Environment (ASE) per availability zone.
 - [ ] One App Service plan per availability zone.
-- [x] One App Service plan per region.
+- [ ] One App Service plan per region.
 - [ ] One App Service Environment (ASE) per region.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -338,7 +338,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 23 part 1](images/question23_24_25_1.png)
 ![Question 23 part 2](images/question23_24_25_2.jpeg)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -348,7 +348,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 24 part 1](images/question23_24_25_1.png)
 ![Question 24 part 2](images/question23_24_25_2.jpeg)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -359,7 +359,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 25 part 2](images/question23_24_25_2.jpeg)
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -368,7 +368,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Azure Network Watcher.
 - [ ] An action group.
 - [ ] A SendGrid account with advanced reporting.
-- [x] Azure AD Connect Health.
+- [ ] Azure AD Connect Health.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -376,7 +376,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 27](images/question27_96_97.jpg)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -386,7 +386,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 28](images/question28.png)
 
 - [ ] On-premises: An On-premises data gateway. Azure: An enterprise application.
-- [x] On-premises: An On-premises data gateway. Azure: A connection gateway resource.
+- [ ] On-premises: An On-premises data gateway. Azure: A connection gateway resource.
 - [ ] On-premises: A Web Application Proxy for Windows Server. Azure: An Azure Event Grid domain.
 - [ ] On-premises: An Azure AD Application Proxy connector. Azure: An Azure Application Gateway.
 
@@ -398,7 +398,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] To estimate the costs, use: The Azure Cost Management Power Bl app. Implement: Azure Spot Virtual Machine pricing.
 - [ ] To estimate the costs, use: The Azure Cost Management Power Bl app. Implement: Azure Reservations.
-- [x] To estimate the costs, use: The Azure Total Cost of Ownership (TCO) calculator. Implement: Azure Hybrid Benefit.
+- [ ] To estimate the costs, use: The Azure Total Cost of Ownership (TCO) calculator. Implement: Azure Hybrid Benefit.
 - [ ] To estimate the costs, use: Azure Reservations. Implement: Azure Hybrid Benefit.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -407,7 +407,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 30](images/question1_17_19_20_30_41.jpg)
 
-- [x] Create an access policy for the blob service.
+- [ ] Create an access policy for the blob service.
 - [ ] Modify the access level of the blob service.
 - [ ] Implement Azure resource locks.
 - [ ] Create Azure RBAC assignments.
@@ -417,7 +417,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### Does this meet the goal? [???]
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)
 
@@ -427,7 +427,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Number of host groups: 2. Number of virtual machine scale sets: 3.
 - [ ] Number of host groups: 3. Number of virtual machine scale sets: 1.
-- [x] Number of host groups: 3. Number of virtual machine scale sets: 3.
+- [ ] Number of host groups: 3. Number of virtual machine scale sets: 3.
 - [ ] Number of host groups: 1. Number of virtual machine scale sets: 0.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -435,7 +435,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### Litware, Inc. is a medium-sized finance company. Litware has a main office in Boston. The network contains an Active Directory forest named Litware.com that is linked to an Azure Active Directory (Azure AD) tenant named Litware.com. All users have Azure Active Directory Premium P2 licenses. Litware has a second Azure AD tenant named dev.Litware.com that is used as a development environment. The Litware.com tenant has a conditional acess policy named capolicy1. Capolicy1 requires that when users manage the Azure subscription for a production environment by using the Azure portal, they must connect from a hybrid Azure AD-joined device. Litware has 10 Azure subscriptions that are linked to the Litware.com tenant and five Azure subscriptions that are linked to the dev.Litware.com tenant. All the subscriptions are in an Enterprise Agreement (EA). The Litware.com tenant contains a custom Azure role-based access control (Azure RBAC) role named Role1 that grants the DataActions read permission to the blobs and files in Azure Storage. The on-premises network of Litware contains the resources shown in the following table. Litware has ExpressRoute connectivity to Azure. Litware plans to implement the following changes: Migrate DB1 and DB2 to Azure. Migrate App1 to Azure virtual machines. Deploy the Azure virtual machines that will host App1 to Azure dedicated hosts. Litware identifies the following authentication and authorization requirements: Users that manage the production environment by using the Azure portal must connect from a hybrid Azure AD-joined device and authenticate by using Azure Multi-Factor Authentication (MFA). The Network Contributor built-in RBAC role must be used to grant permission to all the virtual networks in all the Azure subscriptions. To access the resources in Azure, App1 must use the managed identity of the virtual machines that will host the app. Role1 must be used to assign permissions to the storage accounts of all the Azure subscriptions. RBAC roles must be applied at the highest level possible. Litware identifies the following resiliency requirements: Once migrated to Azure, DB1 and DB2 must meet the following requirements: Maintain availability if two availability zones in the local Azure region fail. Fail over automatically. Minimize I/O latency. App1 must meet the following requirements: Be hosted in an Azure region that supports availability zones. Be hosted on Azure virtual machines that support automatic scaling. Maintain availability if two availability zones in the local Azure region fail. Litware identifies the following security and compliance requirements: Once App1 is migrated to Azure, you must ensure that new data can be written to the app, and the modification of new and existing data is prevented for a period of three years. On-premises users and services must be able to access the Azure Storage account that will host the data in App1. Access to the public endpoint of the Azure Storage account that will host the App1 data must be prevented. All Azure SQL databases in the production environment must have Transparent Data Encryption (TDE) enabled. App1 must not share physical hardware with other workloads. Litware identifies the following business requirements: Minimize administrative effort. Minimize costs. You need to implement the Azure RBAC role assignments for the Network Contributor role. The solution must meet the authentication and authorization requirements. What is the minimum number of assignments that you must use?
 
 - [ ] 1.
-- [x] 2.
+- [ ] 2.
 - [ ] 5.
 - [ ] 10.
 - [ ] 15.
@@ -445,7 +445,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### What should you include in in the recommendation? [???]
 
 - [ ] An Azure SQL Database elastic pool.
-- [x] A vCore-based Azure SQL database.
+- [ ] A vCore-based Azure SQL database.
 - [ ] An Azure virtual machine that runs SQL Server.
 - [ ] A fixed-size DTU AzureSQL database.
 
@@ -455,7 +455,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Azure Cost Management.
 - [ ] Azure Pricing calculator.
-- [x] Azure Migrate.
+- [ ] Azure Migrate.
 - [ ] Azure Advisor.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -467,13 +467,13 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Box 1: Create an Azure policy assignment. Box 2: Invoke a remediation task. Box 3: Create a user-assigned managed identity.
 - [ ] Box 1: Create an Azure policy definition that uses the Modify effect. Box 2: Create an Azure policy assignment. Box 3: Invoke a remediation task.
 - [ ] Box 1: Create an Azure policy definition that uses the Modify effect. Box 2: reate an Azure policy assignment. Box 3: Invoke a remediation task.
-- [x] Box 1: Create an Azure policy definition that uses the deployIfNotExists effect. Box 2: Create an Azure policy assignment. Box 3: Invoke a remediation task.
+- [ ] Box 1: Create an Azure policy definition that uses the deployIfNotExists effect. Box 2: Create an Azure policy assignment. Box 3: Invoke a remediation task.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam, Berlin, and Rome. The network contains two Active Directory forests named corp.fabrikam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of WebApp1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years, including virtual machines that rely on Active Directory for authentication. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft 365 deployment. All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Website content must be easily updated from a single point. User input must be minimized when provisioning new web app instances. Whenever possible, existing on-premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using the Standard pricing tier of Azure App Service. An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. In the event that a link fails between Azure and the on-premises network, ensure that the virtual machines hosted in Azure can authenticate to Active Directory. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabrikam.com must not be affected by a link failure between Azure and the on- premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirements. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication (MFA). The testing of WebApp1 updates must not be visible to anyone outside the company. You must provision an Azure Storage account for the SQL Server database migration.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -481,14 +481,14 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam, Berlin, and Rome. The network contains two Active Directory forests named corp.fabrikam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of WebApp1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years, including virtual machines that rely on Active Directory for authentication. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft 365 deployment. All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Website content must be easily updated from a single point. User input must be minimized when provisioning new web app instances. Whenever possible, existing on-premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using the Standard pricing tier of Azure App Service. An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. In the event that a link fails between Azure and the on-premises network, ensure that the virtual machines hosted in Azure can authenticate to Active Directory. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabrikam.com must not be affected by a link failure between Azure and the on- premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirements. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication (MFA). The testing of WebApp1 updates must not be visible to anyone outside the company. You must provision an Azure Storage account for the Web site content storage
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam, Berlin, and Rome. The network contains two Active Directory forests named corp.fabrikam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of WebApp1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years, including virtual machines that rely on Active Directory for authentication. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft 365 deployment. All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Website content must be easily updated from a single point. User input must be minimized when provisioning new web app instances. Whenever possible, existing on-premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using the Standard pricing tier of Azure App Service. An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. In the event that a link fails between Azure and the on-premises network, ensure that the virtual machines hosted in Azure can authenticate to Active Directory. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabrikam.com must not be affected by a link failure between Azure and the on- premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirements. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication (MFA). The testing of WebApp1 updates must not be visible to anyone outside the company. You must provision an Azure Storage account for the Database metric monitoring
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -497,7 +497,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 41 part 1](images/question1_17_19_20_30_41.jpg)
 ![Question 41 part 2](images/question41.png)
 
-- [x] Database: An Azure SQL Database elastic pool. Service tier: Business Critical.
+- [ ] Database: An Azure SQL Database elastic pool. Service tier: Business Critical.
 - [ ] Database: Azure SQL Managed Instance. Service tier: Business Critical.
 - [ ] Database: Azure SQL Managed Instance . Service tier: Hyperscale.
 - [ ] Database: A single Azure SQL database. Service tier: General Purpose.
@@ -507,7 +507,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam, Berlin, and Rome. The network contains two Active Directory forests named corp.fabrikam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of WebApp1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years, including virtual machines that rely on Active Directory for authentication. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft 365 deployment. All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Website content must be easily updated from a single point. User input must be minimized when provisioning new web app instances. Whenever possible, existing on-premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using the Standard pricing tier of Azure App Service. An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. In the event that a link fails between Azure and the on-premises network, ensure that the virtual machines hosted in Azure can authenticate to Active Directory. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabrikam.com must not be affected by a link failure between Azure and the on- premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirements. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication (MFA). The testing of WebApp1 updates must not be visible to anyone outside the company. What should you include in the identity management strategy to support the planned changes?
 
 - [ ] Move all the domain controllers from corp.fabrikam.com to virtual networks in Azure.
-- [x] Deploy domain controllers for corp.fabrikam.com to virtual networks in Azure.
+- [ ] Deploy domain controllers for corp.fabrikam.com to virtual networks in Azure.
 - [ ] Deploy a new Azure AD tenant for the authentication of new R&D projects.
 - [ ] Deploy domain controllers for the rd.fabrikam.com forest to virtual networks in Azure.
 
@@ -515,7 +515,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You plan to migrate App1 to Azure. The solution must meet the authentication and authorization requirements. Which type of endpoint should App1 use to obtain an access token?
 
-- [x] Azure Instance Metadata Service (IMDS).
+- [ ] Azure Instance Metadata Service (IMDS).
 - [ ] Azure AD.
 - [ ] Azure Service Management.
 - [ ] Microsoft identity platform.
@@ -524,7 +524,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### Your company plans to deploy various Azure App Service instances that will use Azure SQL databases. The App Service instances will be deployed at the same time as the Azure SQL databases. The company has a regulatory requirement to deploy the App Service instances only to specific Azure regions. The resources for the App Service instances must reside in the same region. You need to recommend a solution to meet the regulatory requirement.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -532,7 +532,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam Berlin, and Rome. The network contains two Active Directory forests named corp.fabnkam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the Internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet Information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of Web App1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft Office 365 deployment All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Web site content must be easily updated from a single point. User input must be minimized when provisioning new app instances. Whenever possible, existing on premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using platform as a service (PaaS). An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabhkam.com must not be affected by a link failure between Azure and the on premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirement. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an Internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication. The testing of WebApp1 updates must not be visible to anyone outside the company. You need to recommend a strategy for migrating the database content of WebApp1 to Azure. What should you include in the recommendation?
 
 - [ ] Use Azure Site Recovery to replicate the SQL servers to Azure.
-- [x] Use SQL Server transactional replication.
+- [ ] Use SQL Server transactional replication.
 - [ ] Copy the BACPAC file that contains the Azure SQL database file to Azure Blob storage.
 - [ ] Copy the VHD that contains the Azure SQL database files to Azure Blob storage.
 
@@ -542,7 +542,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 46](images/question46.jpg)
 
-- [x] Azure subscription: Azure Files. On-premises network: Azure File Sync.
+- [ ] Azure subscription: Azure Files. On-premises network: Azure File Sync.
 - [ ] Azure subscription: Azure Files. On-premises network: Azure Data Box Gateway.
 - [ ] Azure subscription: Azure Data Lake Storage. On-premises network: Azure File Sync.
 - [ ] Azure subscription: Azure Data Box Gateway. On-premises network: Azure Blob Storage.
@@ -551,7 +551,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You have an Azure subscription that contains a custom application named Application1. Application1 was developed by an external company named Fabrikam, Ltd. Developers at Fabrikam were assigned role-based access control (RBAC) permissions to the Application1 components. All users are licensed for the Microsoft 365 E5 plan. You need to recommend a solution to verify whether the Fabrikam developers still require permissions to Application1. The solution must meet the following requirements: To the manager of the developers, send a monthly email message that lists the access permissions to Application1. If the manager does not verify an access permission, automatically revoke that permission. Minimize development effort. What should you recommend?
 
-- [x] In Azure Active Directory (Azure AD), create an access review of Application1.
+- [ ] In Azure Active Directory (Azure AD), create an access review of Application1.
 - [ ] Create an Azure Automation runbook that runs the Get-AzRoleAssignment cmdlet.
 - [ ] In Azure Active Directory (Azure AD) Privileged Identity Management, create a custom role assignment for the Application1 resources.
 - [ ] Create an Azure Automation runbook that runs the Get-AzureADUserAppRoleAssignment cmdlet.
@@ -560,7 +560,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You have an Azure subscription. The subscription has a blob container that contains multiple blobs. Ten users in the finance department of your company plan to access the blobs during the month of April. You need to recommend a solution to enable access to the blobs during the month of April only. Which security solution should you include in the recommendation?
 
-- [x] shared access signatures (SAS).
+- [ ] shared access signatures (SAS).
 - [ ] Conditional Access policies.
 - [ ] certificates.
 - [ ] access keys.
@@ -569,11 +569,11 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You have an Azure Active Directory (Azure AD) tenant that syncs with an on-premises Active Directory domain.You have an internal web app named WebApp1 that is hosted on-premises. WebApp1 uses Integrated Windows authentication. Some users work remotely and do NOT have VPN access to the on-premises network. You need to provide the remote users with single sign-on (SSO) access to WebApp1. Which two features should you include in the solution? Each correct answer presents part of the solution
 
-- [x] Azure AD Application Proxy
+- [ ] Azure AD Application Proxy
 - [ ] Azure AD Privileged Identity Management (PIM)
 - [ ] Conditional Access policies
 - [ ] Azure Arc
-- [x] Azure AD enterprise applications
+- [ ] Azure AD enterprise applications
 - [ ] Azure Application Gateway
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -582,7 +582,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Implement Azure AD Identity Protection.
 - [ ] Change the Membership type of Group1 to Dynamic User.
-- [x] Create an access review.
+- [ ] Create an access review.
 - [ ] Implement Azure AD Privileged Identity Management (PIM).
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -592,7 +592,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 51](images/question51.png)
 
 - [ ] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
-- [x] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
+- [ ] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
 - [ ] Databricks SKU: Standard. Cluster configuration: Secret scope.
 - [ ] Databricks SKU: Premium. Cluster configuration: Managed identities.
 
@@ -604,28 +604,28 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] The users can connect to App1 without being prompted for authentication: Azure AD Application Proxy. The users can access App1 only from company-owned computers: Azure Application Gateway.
 - [ ] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: Azure Application Gateway.
-- [x] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: A Conditional Access policy.
+- [ ] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: A Conditional Access policy.
 - [ ] The users can connect to App1 without being prompted for authentication: An Azure AD managed identity. The users can access App1 only from company-owned computers: A Conditional Access policy.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is being deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic. Does this meet the goal?
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Network Watcher to run IP flow verify to analyze the network traffic. Does this meet the goal?
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -637,7 +637,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Events from Windows event logs: Syslog. Events from Linux system logging: Event.
 - [ ] Events from Windows event logs: AzureActivity. Events from Linux system logging: AzureDiagnostics.
 - [ ] Events from Windows event logs: AzureDiagnostics. Events from Linux system logging: Syslog.
-- [x] Events from Windows event logs: Event. Events from Linux system logging: Syslog.
+- [ ] Events from Windows event logs: Event. Events from Linux system logging: Syslog.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -645,10 +645,10 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Azure Active Directory (Azure AD) administrative units.
 - [ ] Azure Active Directory (Azure AD) tenants.
-- [x] Subscriptions.
+- [ ] Subscriptions.
 - [ ] Compute resources.
-- [x] Resource groups.
-- [x] Management groups.
+- [ ] Resource groups.
+- [ ] Management groups.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -657,16 +657,16 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] a public Azure Load Balancer.
 - [ ] a managed identity.
 - [ ] an internal Azure Load Balancer.
-- [x] a Conditional Access policy.
+- [ ] a Conditional Access policy.
 - [ ] an Azure Appp Service pplan.
-- [x] Azure Ad Application Proxy.
-- [x] an Azure AD enterpprise application.
+- [ ] Azure Ad Application Proxy.
+- [ ] an Azure AD enterpprise application.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
 
-- [x] Azure Activity Log.
+- [ ] Azure Activity Log.
 - [ ] Azure Advisor.
 - [ ] Azure Analysis Services.
 - [ ] Azure Monitor action groups.
@@ -676,7 +676,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### You have 100 servers that run Windows Server 2012 R2 and host Microsoft SQL Server 2014 instances. The instances host databases that have the following characteristics: Stored procedures are implemented by using CLR. The largest database is currently 3 TB. None of the databases will ever exceed 4 TB. You plan to move all the data from SQL Server to Azure. You need to recommend a service to host the databases. The solution must meet the following requirements: Whenever possible, minimize management overhead for the migrated databases. Ensure that users can authenticate by using Azure Active Directory (Azure AD) credentials. Minimize the number of database changes required to facilitate the migration. What should you include in the recommendation?
 
 - [ ] Azure SQL Database elastic pools.
-- [x] Azure SQL Managed Instance.
+- [ ] Azure SQL Managed Instance.
 - [ ] Azure SQL Database single databases.
 - [ ] SQL Server 2016 on Azure virtual machines.
 
@@ -685,8 +685,8 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ### You have an Azure subscription that contains an Azure Blob Storage account named store1. You have an on-premises file server named Server1 that runs Windows Server 2016. Server1 stores 500 GB of company files. You need to store a copy of the company files from Server1 in store1. Which two possible Azure services achieve this goal?
 
 - [ ] An Azure Logic Apps integration account.
-- [x] An Azure Import/Export job.
-- [x] Azure Data Factory.
+- [ ] An Azure Import/Export job.
+- [ ] Azure Data Factory.
 - [ ] An Azure Analysis services On-premises data gateway.
 - [ ] An Azure Batch account.
 
@@ -697,7 +697,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] One Azure Data Factory pipeline.
 - [ ] Multiple storage account queues.
 - [ ] One Azure Service Bus queue.
-- [x] One Azure Service Bus topic.
+- [ ] One Azure Service Bus topic.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -709,7 +709,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] App1: Storagel, storage2, and storage3 only. App2: Storage1, storage2, and storage4 only.
 - [ ] App1: Storage1 and storage2 only. App2: Storage1, storage2, and storage4 only.
-- [x] App1: Storage1 and storage3 only. App2: Storage1 and storage4 only.
+- [ ] App1: Storage1 and storage3 only. App2: Storage1 and storage4 only.
 - [ ] App1: Storage1, storage2, storage3, and storage4. App2: Storage1 and storage4 only.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -718,14 +718,14 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Azure Files.
 - [ ] Azure Data Lake Storage Gen2.
-- [x] Azure Blob Storage.
+- [ ] Azure Blob Storage.
 - [ ] Azure SQL Database.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are designing a SQL database solution. The solution will include 20 databases that will be 20 GB each and have varying usage patterns.You need to recommend a database platform to host the databases. The solution must meet the following requirements: The solution must meet a Service Level Agreement (SLA) of 99.99% uptime.The compute resources allocated to the databases must scale dynamically. The solution must have reserved capacity. Compute charges must be minimized. What should you include in the recommendation?
 
-- [x] An elastic pool that contains 20 Azure SQL databases.
+- [ ] An elastic pool that contains 20 Azure SQL databases.
 - [ ] 20 databases on a Microsoft SQL server that runs on an Azure virtual machine in an availability set.
 - [ ] Azure public peering for an ExpressRoute circuit.
 - [ ] 20 instances of Azure SQL Database serverless.
@@ -736,7 +736,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 66](images/question66.png)
 
-- [x] Service: Azure SQL Database. Service tier: Hyperscale.
+- [ ] Service: Azure SQL Database. Service tier: Hyperscale.
 - [ ] Service: Azure SQL Database. Service tier: Premium.
 - [ ] Service: SQL Server on Azure Virtual Machines. Service tier: Standard.
 - [ ] Service: Azure Synapse Analytics. Service tier: Basic.
@@ -747,14 +747,14 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Azure Table Storage.
 - [ ] Azure Event Grid.
-- [x] Azure Cosmos DB SQL API.
-- [x] Azure Time Series Insights.
+- [ ] Azure Cosmos DB SQL API.
+- [ ] Azure Time Series Insights.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are designing an application that will aggregate content for users. You need to recommend a database solution for the application. The solution must meet the following requirements: Support SQL commands. Support multi-master writes. Guarantee low latency read operations. What should you include in the recommendation?
 
-- [x] Azure Cosmos DB SQL API.
+- [ ] Azure Cosmos DB SQL API.
 - [ ] Azure SQL Database that uses active geo-replication.
 - [ ] Azure SQL Database Hyperscale.
 - [ ] Azure Database for PostgreSQL.
@@ -767,7 +767,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 69 part 2](images/question69_70_71_2.png)
 ![Question 69 part 3](images/question69_70_71_3.png)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -779,7 +779,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 70 part 3](images/question69_70_71_3.png)
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -790,7 +790,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 71 part 3](images/question69_70_71_3.png)
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -799,7 +799,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Azure virtual machine availability sets.
 - [ ] Azure Disk Backup.
 - [ ] An Always On availability group.
-- [x] Azure Site Recovery.
+- [ ] Azure Site Recovery.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -817,14 +817,14 @@ policy is [answer choice]: 1 hour.
 - [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
 [answer choice]: 90 days. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the
 policy is [answer choice]: 1 day.
-- [x] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
+- [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
 [answer choice]: 36 months. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the policy is [answer choice]: 1 day.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you create an Azure Traffic Manager profile. Does this meet the goal?
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -832,7 +832,7 @@ policy is [answer choice]: 1 day.
 ### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you deploy an Azure Application Gateway.
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -842,7 +842,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] Storage tier: Hot. Redundancy: Locally-redundant storage (LRS).
 - [ ] Storage tier: Premium. Redundancy: Geo-redundant storage (GRS).
-- [x] Storage tier: Premium. Redundancy: Zone-redundant storage (ZRS).
+- [ ] Storage tier: Premium. Redundancy: Zone-redundant storage (ZRS).
 - [ ] Storage tier: Transaction optimized. Redundancy: Zone-redundant storage (ZRS).
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -850,7 +850,7 @@ policy is [answer choice]: 1 day.
 ### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy an Azure virtual machine scale set that uses autoscaling.
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -858,7 +858,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] In two Azure regions, deploy a load balancer and a web app.
 - [ ] In two Azure regions, deploy a load balancer and a virtual machine scale set.
-- [x] Deploy a load balancer and a virtual machine scale set across two availability zones.
+- [ ] Deploy a load balancer and a virtual machine scale set across two availability zones.
 - [ ] In two Azure regions, deploy an Azure Traffic Manager profile and a web app.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -867,7 +867,7 @@ policy is [answer choice]: 1 day.
 
 ![Question 79](images/question79.png)
 
-- [x] Upgrade VirtualWAN1 to Standard.
+- [ ] Upgrade VirtualWAN1 to Standard.
 - [ ] Create a gateway on Hub1.
 - [ ] Enable the ExpressRoute premium add-on.
 - [ ] Create a hub virtual network in US East.
@@ -877,7 +877,7 @@ policy is [answer choice]: 1 day.
 ### You have an Azure subscription that contains a storage account. An application sometimes writes duplicate files to the storage account. You have a PowerShell script that identifies and deletes duplicate files in the storage account. Currently, the script is run manually after approval from the operations manager. You need to recommend a serverless solution that performs the following actions: Runs the script once an hour to identify whether duplicate files exist. Sends an email notification to the operations manager requesting approval to delete the duplicate files. Processes an email response from the operations manager specifying whether the deletion was approved. Runs the script if the deletion was approved. What should you include in the recommendation?
 
 - [ ] Azure Logic Apps and Azure Event Grid.
-- [x] Azure Logic Apps and Azure Functions.
+- [ ] Azure Logic Apps and Azure Functions.
 - [ ] Azure Pipelines and Azure Service Fabric.
 - [ ] Azure Functions and Azure Batch.
 
@@ -890,14 +890,14 @@ policy is [answer choice]: 1 day.
 - [ ] Azure AD Application Proxy.
 - [ ] The Active Directory Domain Services role on a virtual machine.
 - [ ] An Azure VPN gateway.
-- [x] Azure AD Domain Services (Azure AD DS).
+- [ ] Azure AD Domain Services (Azure AD DS).
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to design a solution that will execute custom C# code in response to an event routed to Azure Event Grid. The solution must meet the following requirements: The executed code must be able to access the private IP address of a Microsoft SQL Server instance that runs on an Azure virtual machine. Costs must be minimized. What should you include in the solution?
 
 - [ ] Azure Logic Apps in the Consumption plan.
-- [x] Azure Functions in the Premium plan.
+- [ ] Azure Functions in the Premium plan.
 - [ ] Azure Functions in the Consumption plan.
 - [ ] Azure Logic Apps in the integrated service environment.
 
@@ -908,7 +908,7 @@ policy is [answer choice]: 1 day.
 - [ ] A Recovery Services vault and Windows Server Backup.
 - [ ] Azure blob containers and Azure File Sync.
 - [ ] A Recovery Services vault and Azure Backup.
-- [x] An Azure file share and Azure File Sync.
+- [ ] An Azure file share and Azure File Sync.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -917,7 +917,7 @@ policy is [answer choice]: 1 day.
 ![Question 81 part 1](images/question81_82_83_1.png)
 ![Question 81 part 2](images/question81_82_83_2.jpg)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -927,7 +927,7 @@ policy is [answer choice]: 1 day.
 ![Question 82 part 1](images/question81_82_83_1.png)
 ![Question 82 part 2](images/question81_82_83_2.jpg)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -938,7 +938,7 @@ policy is [answer choice]: 1 day.
 ![Question 83 part 2](images/question81_82_83_2.jpg)
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -948,7 +948,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure service: Azure Application Gateway. Feature: SSL offloading.
 - [ ] Azure service: Azure Traffic Manager. Feature: Web Application Firewall (WAF).
-- [x] Azure service: Azure Application Gateway. Feature: Web Application Firewall (WAF).
+- [ ] Azure service: Azure Application Gateway. Feature: Web Application Firewall (WAF).
 - [ ] Azure service: Azure Load Balancer. Feature: URL-based content routing.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -958,14 +958,14 @@ policy is [answer choice]: 1 day.
 - [ ] Azure App Gateway with Azure Web Application Firewall (WAF).
 - [ ] Azure API Management Standard tier with a service endpoint.
 - [ ] Azure Front Door with Azure Web Application Firewall (WAF).
-- [x] Azure API Management Premium tier with virtual network connection.
+- [ ] Azure API Management Premium tier with virtual network connection.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have a .NET web service named Service1 that has the following requirements: Must read and write temporary files to the local file system. Must write to the Application event log. You need to recommend a solution to host Service1 in Azure. The solution must meet the following requirements: Minimize maintenance overhead. Minimize costs. What should you include in the recommendation?
 
 - [ ] An Azure App Service web app.
-- [x] An Azure virtual machine scale set.
+- [ ] An Azure virtual machine scale set.
 - [ ] An App Service Environment (ASE).
 - [ ] An Azure Functions app.
 
@@ -978,7 +978,7 @@ policy is [answer choice]: 1 day.
 - [ ] 0.
 - [ ] 1.
 - [ ] 2.
-- [x] 3.
+- [ ] 3.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -986,7 +986,7 @@ policy is [answer choice]: 1 day.
 
 ![Question 88](images/question88.png)
 
-- [x] vCore-based General Purpose.
+- [ ] vCore-based General Purpose.
 - [ ] DTU-based Standard.
 - [ ] vCore-based Business Critical.
 - [ ] DTU-based Basic.
@@ -997,7 +997,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure Service Fabric.
 - [ ] Azure Data Lake.
-- [x] Azure Service Bus.
+- [ ] Azure Service Bus.
 - [ ] Azure Traffic Manager.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1006,7 +1006,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure Pricing calculator.
 - [ ] Azure Advisor.
-- [x] Azure Migrate.
+- [ ] Azure Migrate.
 - [ ] Azure Cost Management.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1014,7 +1014,7 @@ policy is [answer choice]: 1 day.
 ### You plan provision a High Performance Computing (HPC) cluster in Azure that will use a third-party scheduler. You need to recommend a solution to provision and manage the HPC cluster node. What should you include in the recommendation?
 
 - [ ] Azure Automation.
-- [x] Azure CycleCloud.
+- [ ] Azure CycleCloud.
 - [ ] Azure Purview.
 - [ ] Azure Lighthouse
 
@@ -1024,7 +1024,7 @@ policy is [answer choice]: 1 day.
 
 ![Question 92](images/question92.png)
 
-- [x] Request routing method: A Traffic Manager profile. Request routing configuration: Priority traffic routing.
+- [ ] Request routing method: A Traffic Manager profile. Request routing configuration: Priority traffic routing.
 - [ ] Request routing method: Azure Application Gateway. Request routing configuration: Priority traffic routing.
 - [ ] Request routing method: A Traffic Manager profile. Request routing configuration: Cookie-based session affinity.
 - [ ] Request routing method: Azure Load Balancer. Request routing configuration: Performance traffic routing.
@@ -1035,7 +1035,7 @@ policy is [answer choice]: 1 day.
 
 ![Question 93](images/question93.jpg)
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1045,7 +1045,7 @@ policy is [answer choice]: 1 day.
 ![Question 94](images/question94.jpg)
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1054,18 +1054,18 @@ policy is [answer choice]: 1 day.
 - [ ] AzureActivity.
 - [ ] AzureDiagnostics.
 - [ ] Event.
-- [x] Syslog.
+- [ ] Syslog.
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Install and configure the Azure Monitoring agent and the Dependency Agent on all the virtual machines. Use VM insights in Azure Monitor to analyze the network traffic. Does this meet the goal?
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 ### You need to design an architecture to capture the creation of users and the assignment of roles. The captured data must be stored in Azure Cosmos DB. Which services should you include in the design?
 
 - [ ] Azure Event Grid.
-- [x] Azure Event Hubs.
-- [x] Azure Functions.
+- [ ] Azure Event Hubs.
+- [ ] Azure Functions.
 - [ ] Azure Monitor Logs.
 - [ ] Azure Notification Hubs.
 
@@ -1074,12 +1074,12 @@ policy is [answer choice]: 1 day.
 - [ ] Azure Front Door.
 - [ ] Azure AD Application Proxy.
 - [ ] Azure AD business-to-business (B2B).
-- [x] Azure API Management.
+- [ ] Azure API Management.
 
 ### Resource to create in Azure:
 
 - [ ] An event hub.
-- [x] A Log Analytics workspace.
+- [ ] A Log Analytics workspace.
 - [ ] A search service.
 - [ ] A storage account.
 
@@ -1087,12 +1087,12 @@ policy is [answer choice]: 1 day.
 
 - [ ] Create event subscripptions.
 - [ ] Configure Continous delivery.
-- [x] Install the Azure Monitor agent.
+- [ ] Install the Azure Monitor agent.
 - [ ] Modify the membership of the Event Log Readers group.
 
 ### Security:
 
-- [x] Azure AD privileged Identitu Management.
+- [ ] Azure AD privileged Identitu Management.
 - [ ] Azure Managed Identity.
 - [ ] Azure Ad Connect.
 - [ ] Azure Ad identity Pprotection.
@@ -1100,13 +1100,13 @@ policy is [answer choice]: 1 day.
 ### Development:
 
 - [ ] Azure AD privileged Identitu Management.
-- [x] Azure Managed Identity.
+- [ ] Azure Managed Identity.
 - [ ] Azure Ad Connect.
 - [ ] Azure Ad identity Pprotection.
 
 ### Quality Assurance:
 
-- [x] Azure AD privileged Identitu Management.
+- [ ] Azure AD privileged Identitu Management.
 - [ ] Azure Managed Identity.
 - [ ] Azure Ad Connect.
 - [ ] Azure Ad identity Pprotection.
@@ -1116,33 +1116,33 @@ policy is [answer choice]: 1 day.
 - [ ] Append.
 - [ ] EnforceOPAConstraint.
 - [ ] EnforceRegoPolicy.
-- [x] Modify.
+- [ ] Modify.
 
 ### Azure Active Direcotry (Azure AD) objects and role-based access control (RBAC) role to use for the remediation tasks:
 
-- [x] A managed identity with the Contributor role.
+- [ ] A managed identity with the Contributor role.
 - [ ] A managed identity with the User Access Administrator role.
 - [ ] A service principal with the Contribution role.
 - [ ] A service principal with the User Access Administrator role.
 
 ### You can add a new diagnostic settings that archives SQLInsights logs to storage2.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 ### You can add a new diagnostic settings that send SQLInsights logs to Workspace2.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 ### You can add a new diagnostic settings that send SQLInsights logs to Hub1.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 ### You plan to deploy an Azure SQL database that will store Personally Identifiable Information (PII). You need to ensure that only privileged users can view the PII. What should you include in the solution?
 
-- [x] dynamic data masking.
+- [ ] dynamic data masking.
 - [ ] role-based access control (RBAC).
 - [ ] Data Discovery & Classification.
 - [ ] Transparent Data Encryption (TDE).
@@ -1150,13 +1150,13 @@ policy is [answer choice]: 1 day.
 ### You plan to deploy an app that will use an Azure Storage account. You need to deploy the storage account. The storage account must meet the following requirements: Store the data for multiple users. Encrypt each user's data by using a separate key. Encrypt all the data in the storage account by using customer-managed keys. What should you deploy?
 
 - [ ] files in a premium file share storage account.
-- [x] blobs in a general purpose v2 storage account.
+- [ ] blobs in a general purpose v2 storage account.
 - [ ] blobs in an Azure Data Lake Storage Gen2 account.
 - [ ] files in a general purpose v2 storage account.
 
 ### Key Vault integration method:
 
-- [x] Key Vault references in Application settings.
+- [ ] Key Vault references in Application settings.
 - [ ] Key Vault references in Appsettings.json.
 - [ ] Key Vault references in Web.config.
 - [ ] Key Vault SDK
@@ -1166,7 +1166,7 @@ policy is [answer choice]: 1 day.
 - [ ] a system-assigned managed identity.
 - [ ] a service principal that is configured to use a certificate.
 - [ ] a service principal that is configured to use a client secret.
-- [x] a user-assigned managed identity.
+- [ ] a user-assigned managed identity.
 
 ### You have the resources shown in the following table: CDB1 hosts a container that stores continuously updated operational data. You are designing a solution that will use AS1 to analyze the operational data daily. You need to recommend a solution to analyze the data without affecting the performance of the operational data store. What should you include in the recommendation?
 
@@ -1174,13 +1174,13 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure Cosmos DB change feed.
 - [ ] Azure Data Factory with Azure Cosmos DB and Azure Synapse Analytics connectors.
-- [x] Azure Synapse Link for Azure Cosmos DB.
+- [ ] Azure Synapse Link for Azure Cosmos DB.
 - [ ] Azure Synapse Analytics with PolyBase data loading.
 
 ### The amount of time that SQLInsight data will be stored in blob storage in [...].
 
 - [ ] 30 days.
-- [x] 90 days.
+- [ ] 90 days.
 - [ ] 730 days.
 - [ ] indefinite.
 
@@ -1188,21 +1188,21 @@ policy is [answer choice]: 1 day.
 
 - [ ] 30 days.
 - [ ] 90 days.
-- [x] 730 days.
+- [ ] 730 days.
 - [ ] indefinite.
 
 ### You have an application that is used by 6,000 users to validate their vacation requests. The application manages its own credential store. Users must enter a username and password to access the application. The application does NOT support identity providers. You plan to upgrade the application to use single sign-on (SSO) authentication by using an Azure Active Directory (Azure AD) application registration. Which SSO method should you use?
 
 - [ ] header-based.
 - [ ] SAML.
-- [x] password-based.
+- [ ] password-based.
 - [ ] OpenID Connect.
 
 ### You are designing an Azure governance solution. All Azure resources must be easily identifiable based on the following operational information: environment, owner, department and cost center. You need to ensure that you can use the operational information when you generate reports for the Azure resources. What should you include in the solution?
 
 - [ ] an Azure data catalog that uses the Azure REST API as a data source.
 - [ ] an Azure management group that uses parent groups to create a hierarchy.
-- [x] an Azure policy that enforces tagging rules.
+- [ ] an Azure policy that enforces tagging rules.
 - [ ] Azure Active Directory (Azure AD) administrative units.
 
 ### A company named Contoso, Ltd. has an Azure Active Directory (Azure AD) tenant that is integrated with Microsoft 365 and an Azure subscription. Contoso has an on-premises identity infrastructure. The infrastructure includes servers that run Active Directory Domain Services (AD DS) and Azure AD Connect. Contoso has a partnership with a company named Fabrikam. Inc. Fabrikam has an Active Directory forest and a Microsoft 365 tenant. Fabrikam has the same on- premises identity infrastructure components as Contoso. A team of 10 developers from Fabrikam will work on an Azure solution that will be hosted in the Azure subscription of Contoso. The developers must be added to the Contributor role for a resource group in the Contoso subscription. You need to recommend a solution to ensure that Contoso can assign the role to the 10 Fabrikam developers. The solution must ensure that the Fabrikam developers use their existing credentials to access resources What should you recommend?
@@ -1210,7 +1210,7 @@ policy is [answer choice]: 1 day.
 - [ ] In the Azure AD tenant of Contoso. create cloud-only user accounts for the Fabrikam developers.
 - [ ] Configure a forest trust between the on-premises Active Directory forests of Contoso and Fabrikam.
 - [ ] Configure an organization relationship between the Microsoft 365 tenants of Fabrikam and Contoso.
-- [x] In the Azure AD tenant of Contoso, create guest accounts for the Fabnkam developers.
+- [ ] In the Azure AD tenant of Contoso, create guest accounts for the Fabnkam developers.
 
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
@@ -1219,25 +1219,25 @@ policy is [answer choice]: 1 day.
 
 - [ ] Configure the Azure AD provisioning service.
 - [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
-- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Use Azure AD entitlement management to govern external users.
 - [ ] Configure Azure AD join.
 
 ### Grant permissions to allow the web apps to access the web APIs by using [...].
 
-- [x] Azure AD.
+- [ ] Azure AD.
 - [ ] Azure API Management.
 - [ ] The web APIs.
 
 ### Configure a JSON WEB Token (JWT) validation policy by using [...].
 
 - [ ] Azure AD.
-- [x] Azure API Management.
+- [ ] Azure API Management.
 - [ ] The web APIs.
 
 ### You are developing an app that will read activity logs for an Azure subscription by using Azure Functions. You need to recommend an authentication solution for Azure Functions. The solution must minimize administrative effort. What should you include in the recommendation?
 
 - [ ] an enterprise application in Azure AD.
-- [x] system-assigned managed identities.
+- [ ] system-assigned managed identities.
 - [ ] shared access signatures (SAS).
 - [ ] application registration in Azure AD.
 
@@ -1246,13 +1246,13 @@ policy is [answer choice]: 1 day.
 ![Question 123](images/question123.png)
 
 - [ ] Configure Azure AD join.
-- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Use Azure AD entitlement management to govern external users.
 - [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
 - [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
 
-- [x] Azure Activity Log.
+- [ ] Azure Activity Log.
 - [ ] Azure Arc.
 - [ ] Azure Analysis Services.
 - [ ] Azure Monitor metrics.
@@ -1260,13 +1260,13 @@ policy is [answer choice]: 1 day.
 ### Configure App1l to use OAuth 2.0 [...]:
 
 - [ ] Authorization code grant flows.
-- [x] Client credentials grant flows.
+- [ ] Client credentials grant flows.
 - [ ] Implicit grant flows.
 
 ### Configure App1 to use a Rest API call to retrieve an authentication token from the [...]:
 
 - [ ] Azure Instance Metadata Service (MDS) endpoint.
-- [x] OAuth 2.0 access token endpoint of Azure AD.
+- [ ] OAuth 2.0 access token endpoint of Azure AD.
 - [ ] OAuth 2.0 access token endpoint of Microsoft Identity Platform.
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
@@ -1276,11 +1276,11 @@ policy is [answer choice]: 1 day.
 - [ ] Configure Azure AD join.
 - [ ] Configure Azure AD Identity Protection.
 - [ ] Configure a Conditional Access policy.
-- [x] Configure Supported account types in the application registration and update the sign-in endpoint.
+- [ ] Configure Supported account types in the application registration and update the sign-in endpoint.
 
 ### Authentication:
 
-- [x] Application registration in Azure AD.
+- [ ] Application registration in Azure AD.
 - [ ] A system-assigned managed identity.
 - [ ] A user-assigned managed identity.
 
@@ -1288,21 +1288,21 @@ policy is [answer choice]: 1 day.
 
 - [ ] Application permissions.
 - [ ] Azure role-based access control (Azure RBAC).
-- [x] Delegated permissions.
+- [ ] Delegated permissions.
 
 ### User2 can grant permissions to Group2.
 
 - [ ] Yes.
-- [x] No.
+- [ ] No.
 
 ### User3 can create a storage account in RG2.
 
-- [x] Yes.
+- [ ] Yes.
 - [ ] No.
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
 
-- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Use Azure AD entitlement management to govern external users.
 - [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
 - [ ] Configure a Conditional Access policy.
 - [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
@@ -1310,7 +1310,7 @@ policy is [answer choice]: 1 day.
 ### You have an Azure subscription that contains 1,000 resources. You need to generate compliance reports for the subscription. The solution must ensure that the resources can be grouped by department. What should you use to organize the resources?
 
 - [ ] application groups and quotas.
-- [x] Azure Policy and tags.
+- [ ] Azure Policy and tags.
 - [ ] administrative units and Azure Lighthouse.
 - [ ] resource groups and role assignments.
 
@@ -1319,19 +1319,19 @@ policy is [answer choice]: 1 day.
 - [ ] Azure Monitor action groups.
 - [ ] Azure Arc.
 - [ ] Azure Monitor metrics.
-- [x] Azure Activity Log.
+- [ ] Azure Activity Log.
 
 ### You have an Azure AD tenant that contains an administrative unit named MarketingAU. MarketingAU contains 100 users. You create two users named User1 and User2. You need to ensure that the users can perform the following actions in MarketingAU:  User1 must be able to create user accounts. User2 must be able to reset user passwords. Which role should you assign to each user?
 
-- [x] Helpdesk Administrator for MarketingAU.
+- [ ] Helpdesk Administrator for MarketingAU.
 - [ ] Helpdesk Administrator for the tenant.
-- [x] User Administrator for MarketingAU.
+- [ ] User Administrator for MarketingAU.
 - [ ] User Administrator for the tenant.
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
 
 - [ ] Azure Arc.
-- [x] Azure Log Analytics Most Voted.
+- [ ] Azure Log Analytics Most Voted.
 - [ ] Application insights.
 - [ ] Azure Monitor action groups.
 
@@ -1339,23 +1339,23 @@ policy is [answer choice]: 1 day.
 
 - [ ] Certificate.
 - [ ] Key.
-- [x] Secret.
+- [ ] Secret.
 
 ### Access [...]:
 
 - [ ] An API token.
-- [x] A managed service identity.
+- [ ] A managed service identity.
 - [ ] A service principal.
 
 ### You have two app registrations named App1 and App2 in Azure AD. App1 supports role-based access control (RBAC) and includes a role named Writer. You need to ensure that when App2 authenticates to access App1, the tokens issued by Azure AD include the Writer role claim. Which blade should you use to modify each app registration?
 
 - [ ] API permissions.
-- [x] App roles.
-- [x] Token configuration.
+- [ ] App roles.
+- [ ] Token configuration.
 
 ### You have an Azure subscription. You plan to deploy a monitoring solution that will include the following: Azure Monitor Network Insights. Application Insights. Microsoft Sentinel. VM insights. The monitoring solution will be managed by a single team. What is the minimum number of Azure Monitor workspaces required?
 
-- [x] 1.
+- [ ] 1.
 - [ ] 2.
 - [ ] 3.
 - [ ] 4.
@@ -1365,24 +1365,24 @@ policy is [answer choice]: 1 day.
 - [ ] Azure AD Identity Protection.
 - [ ] Microsoft Defender for Identity.
 - [ ] Microsoft Entra Permissions Management.
-- [x] Azure AD Identity Governance.
+- [ ] Azure AD Identity Governance.
 
 ### Set available effects to [...]:
 
-- [x] DepoyIfNotExist.
+- [ ] DepoyIfNotExist.
 - [ ] EnforceRegoPolicy.
 - [ ] Modify.
 
 #### Include in the definition [...]:
 
-- [x] The identity required to perform the remediation task.
+- [ ] The identity required to perform the remediation task.
 - [ ] The scopes of the policy assignments.
 - [ ] The role-based access control (RBAC) roles required to perform the remediation task.
 
 ### You have an Azure subscription. The subscription contains a tiered app named App1 that is distributed across multiple containers hosted in Azure Container Instances. You need to deploy an Azure Monitor monitoring solution for App. The solution must meet the following requirements: Support using synthetic transaction monitoring to monitor traffic between the App1 components. Minimize development effort. What should you include in the solution?
 
 - [ ] Network insights.
-- [x] Application Insights.
+- [ ] Application Insights.
 - [ ] Container insights.
 - [ ] Log Analytics Workspace insights.
 
@@ -1390,18 +1390,18 @@ policy is [answer choice]: 1 day.
 
 - [ ] App1.
 - [ ] App1Logs.
-- [x] Workspace1.
+- [ ] Workspace1.
 
 ### Modification [...]:
 
-- [x] Change to a commitment pricing tier.
+- [ ] Change to a commitment pricing tier.
 - [ ] Change to the Basic Logs data plan.
 - [ ] Set a daily cap.
 
 ### You have 12 Azure subscriptions and three projects. Each project uses resources across multiple subscriptions. You need to use Microsoft Cost Management to monitor costs on a per project basis. The solution must minimize administrative effort. Which two components should you include in the solution? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.
 
-- [x] budgets.
-- [x] resource tags.
+- [ ] budgets.
+- [ ] resource tags.
 - [ ] custom role-based access control (RBAC) roles.
 - [ ] management groups.
 - [ ] Azure boards.
@@ -1409,47 +1409,47 @@ policy is [answer choice]: 1 day.
 ### To trigger the compliance scans, use [...]:
 
 - [ ] An Azure template.
-- [x] The Azure Command-Line Interface (CLI).
+- [ ] The Azure Command-Line Interface (CLI).
 - [ ] The Azure portal.
 
 ### To generate the non-compliance alerts, configure diagnostic settings for the [...]:
 
-- [x] Azure activity logs.
+- [ ] Azure activity logs.
 - [ ] Log Analytics workspace.
 - [ ] Storage accounts.
 
 ### For the blobs [...]:
 
 - [ ] A user delegation shared access signature (SAS) only.
-- [x] A shared access signature (SAS) and a stored access policy.
+- [ ] A shared access signature (SAS) and a stored access policy.
 - [ ] A user delegation shared access signature (SAS) and a stored access policy.
 
 ### For the file shares [...]:
 
-- [x] Azure AD credentials.
+- [ ] Azure AD credentials.
 - [ ] A user delegation shared access signature (SAS) only.
 - [ ] A user delegation shared access signature (SAS) and a stored access policy.
 
 ### To forward the logs [...]:
 
 - [ ] A linked storage account for the Log Analytics workspace.
-- [x] An Azure Monitor data collection endpoint.
+- [ ] An Azure Monitor data collection endpoint.
 - [ ] A service endpoint.
 
 ### To transform the logs and store the data [...]:
 
-- [x] A KQL query.
+- [ ] A KQL query.
 - [ ] A WQL query.
 - [ ] An XPath query.
 
 ### To collect the event logs [...]:
 
-- [x] Azure Event Grid.
+- [ ] Azure Event Grid.
 - [ ] Azure Lighthouse.
 - [ ] Azure Purview.
 
 ### To support the DCRs [...]:
 
 - [ ] The Log Analytics agent.
-- [x] The Azure Monitor agent.
+- [ ] The Azure Monitor agent.
 - [ ] The Azure Connected Machine agent.
