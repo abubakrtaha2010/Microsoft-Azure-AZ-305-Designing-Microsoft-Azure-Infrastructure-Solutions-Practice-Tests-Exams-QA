@@ -566,7 +566,7 @@ policy is [answer choice]: 1 day.
 ### You have an Azure subscription that contains a storage account. An application sometimes writes duplicate files to the storage account. You have a PowerShell script that identifies and deletes duplicate files in the storage account. Currently, the script is run manually after approval from the operations manager. You need to recommend a serverless solution that performs the following actions: Runs the script once an hour to identify whether duplicate files exist. Sends an email notification to the operations manager requesting approval to delete the duplicate files. Processes an email response from the operations manager specifying whether the deletion was approved. Runs the script if the deletion was approved. What should you include in the recommendation?
 
 - [ ] Azure Logic Apps and Azure Event Grid.
-- [ ] Azure Logic Apps and Azure Functions.
+- [x] Azure Logic Apps and Azure Functions.
 - [ ] Azure Pipelines and Azure Service Fabric.
 - [ ] Azure Functions and Azure Batch.
 
@@ -577,12 +577,12 @@ policy is [answer choice]: 1 day.
 - [ ] Azure AD Application Proxy.
 - [ ] The Active Directory Domain Services role on a virtual machine.
 - [ ] An Azure VPN gateway.
-- [ ] Azure AD Domain Services (Azure AD DS).
+- [x] Azure AD Domain Services (Azure AD DS).
 
 ### You need to design a solution that will execute custom C# code in response to an event routed to Azure Event Grid. The solution must meet the following requirements: The executed code must be able to access the private IP address of a Microsoft SQL Server instance that runs on an Azure virtual machine. Costs must be minimized. What should you include in the solution?
 
 - [ ] Azure Logic Apps in the Consumption plan.
-- [ ] Azure Functions in the Premium plan.
+- [x] Azure Functions in the Premium plan.
 - [ ] Azure Functions in the Consumption plan.
 - [ ] Azure Logic Apps in the integrated service environment.
 
@@ -591,31 +591,7 @@ policy is [answer choice]: 1 day.
 - [ ] A Recovery Services vault and Windows Server Backup.
 - [ ] Azure blob containers and Azure File Sync.
 - [ ] A Recovery Services vault and Azure Backup.
-- [ ] An Azure file share and Azure File Sync.
-
-### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 1: The API is available to partners over the internet
-
-![Question 81 part 1](images/question81_82_83_1.png)
-![Question 81 part 2](images/question81_82_83_2.jpg)
-
-- [ ] Yes.
-- [ ] No.
-
-### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 2: The APIM instance can access real-time data from VM1
-
-![Question 82 part 1](images/question81_82_83_1.png)
-![Question 82 part 2](images/question81_82_83_2.jpg)
-
-- [ ] Yes.
-- [ ] No.
-
-### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 3: A VPN gateway is required for partner access
-
-![Question 83 part 1](images/question81_82_83_1.png)
-![Question 83 part 2](images/question81_82_83_2.jpg)
-
-- [ ] Yes.
-- [ ] No.
+- [x] An Azure file share and Azure File Sync.
 
 ### Your company has an existing web app that runs on Azure virtual machines. You need to ensure that the app is protected from SQL injection attempts and uses a layer-7 load balancer. The solution must minimize disruptions to the code of the app. What should you recommend?
 
@@ -623,7 +599,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure service: Azure Application Gateway. Feature: SSL offloading.
 - [ ] Azure service: Azure Traffic Manager. Feature: Web Application Firewall (WAF).
-- [ ] Azure service: Azure Application Gateway. Feature: Web Application Firewall (WAF).
+- [x] Azure service: Azure Application Gateway. Feature: Web Application Firewall (WAF).
 - [ ] Azure service: Azure Load Balancer. Feature: URL-based content routing.
 
 ### You are designing a microservices architecture that will be hosted in an Azure Kubernetes Service (AKS) cluster. Apps that will consume the microservices will be hosted on Azure virtual machines. The virtual machines and the AKS cluster will reside on the same virtual network. You need to design a solution to expose the microservices to the consumer apps. The solution must meet the following requirements: Ingress access to the microservices must be restricted to a single private IP address and protected by using mutual TLS authentication. The number of incoming microservice calls must be rate-limited. Costs must be minimized. What should you include in the solution?
@@ -631,30 +607,21 @@ policy is [answer choice]: 1 day.
 - [ ] Azure App Gateway with Azure Web Application Firewall (WAF).
 - [ ] Azure API Management Standard tier with a service endpoint.
 - [ ] Azure Front Door with Azure Web Application Firewall (WAF).
-- [ ] Azure API Management Premium tier with virtual network connection.
+- [x] Azure API Management Premium tier with virtual network connection.
 
 ### You have a .NET web service named Service1 that has the following requirements: Must read and write temporary files to the local file system. Must write to the Application event log. You need to recommend a solution to host Service1 in Azure. The solution must meet the following requirements: Minimize maintenance overhead. Minimize costs. What should you include in the recommendation?
 
-- [ ] An Azure App Service web app.
+- [x] An Azure App Service web app.
 - [ ] An Azure virtual machine scale set.
 - [ ] An App Service Environment (ASE).
 - [ ] An Azure Functions app.
-
-### You have the Azure resources shown in the following table. You need to deploy a new Azure Firewall policy that will contain mandatory rules for all Azure Firewall deployments. The new policy will be configured as a parent policy for the existing policies. What is the minimum number of additional Azure Firewall policies you should create?
-
-![Question 87](images/question87.png)
-
-- [ ] 0.
-- [ ] 1.
-- [ ] 2.
-- [ ] 3.
 
 ### Your company has an app named App1 that uses data from the on-premises Microsoft SQL Server databases shown in the following table. App1 and the data are used on the first day of the month only. The data is not expected to grow more than 3% each year. The company is rewriting App1 as an Azure web app and plans to migrate all the data to Azure. You need to migrate the data to Azure SQL Database. The solution must minimize costs. Which service tier should you use?
 
 ![Question 88](images/question88.png)
 
 - [ ] vCore-based General Purpose.
-- [ ] DTU-based Standard.
+- [x] DTU-based Standard.
 - [ ] vCore-based Business Critical.
 - [ ] DTU-based Basic.
 
