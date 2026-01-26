@@ -205,17 +205,11 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 30](images/question1_17_19_20_30_41.jpg)
 
-- [ ] Create an access policy for the blob service.
+- [x] Create an access policy for the blob service.
 - [ ] Modify the access level of the blob service.
 - [ ] Implement Azure resource locks.
 - [ ] Create Azure RBAC assignments.
 
-### Does this meet the goal? [???]
-
-- [ ] Yes.
-- [ ] No.
-
-**[⬆ Back to Top](#table-of-contents)
 
 ### You plan to migrate App1 to Azure. You need to recommend a high-availability solution for App1. The solution must meet the resiliency requirements. What should you include in the recommendation?
 
@@ -351,7 +345,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 51](images/question51.png)
 
-- [ ] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
+- [x] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
 - [ ] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
 - [ ] Databricks SKU: Standard. Cluster configuration: Secret scope.
 - [ ] Databricks SKU: Premium. Cluster configuration: Managed identities.
@@ -362,22 +356,22 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] The users can connect to App1 without being prompted for authentication: Azure AD Application Proxy. The users can access App1 only from company-owned computers: Azure Application Gateway.
 - [ ] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: Azure Application Gateway.
-- [ ] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: A Conditional Access policy.
+- [x] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: A Conditional Access policy.
 - [ ] The users can connect to App1 without being prompted for authentication: An Azure AD managed identity. The users can access App1 only from company-owned computers: A Conditional Access policy.
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is being deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic. Does this meet the goal?
 
-- [ ] Yes.
+- [x] Yes.
 - [ ] No.
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic
 
 - [ ] Yes.
-- [ ] No.
+- [x] No.
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Network Watcher to run IP flow verify to analyze the network traffic. Does this meet the goal?
 
-- [ ] Yes.
+- [x] Yes.
 - [ ] No.
 
 ### You have an Azure subscription. The subscription contains Azure virtual machines that run Windows Server 2016 and Linux. You need to use Azure Monitor to design an alerting strategy for security-related events. Which Azure Monitor Logs tables should you query?
@@ -387,16 +381,16 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Events from Windows event logs: Syslog. Events from Linux system logging: Event.
 - [ ] Events from Windows event logs: AzureActivity. Events from Linux system logging: AzureDiagnostics.
 - [ ] Events from Windows event logs: AzureDiagnostics. Events from Linux system logging: Syslog.
-- [ ] Events from Windows event logs: Event. Events from Linux system logging: Syslog.
+- [x] Events from Windows event logs: Event. Events from Linux system logging: Syslog.
 
 ### You are designing a large Azure environment that will contain many subscriptions. You plan to use Azure Policy as part of a governance solution. To which three scopes can you assign Azure Policy definitions? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point
 
 - [ ] Azure Active Directory (Azure AD) administrative units.
 - [ ] Azure Active Directory (Azure AD) tenants.
-- [ ] Subscriptions.
+- [x] Subscriptions.
 - [ ] Compute resources.
-- [ ] Resource groups.
-- [ ] Management groups.
+- [x] Resource groups.
+- [x] Management groups.
 
 ### Your on-premises network contains a server named Server1 that runs an ASP.NET application named App1. You have a hybrid deployment of Azure Active Directory (Azure AD). You need to recommend a solution to ensure that users sign in by using their Azure AD account and Azure Multi-Factor Authentication (MFA) when they connect to App1 from the internet. Which three features should you recommend be deployed and configured in sequence?
 
