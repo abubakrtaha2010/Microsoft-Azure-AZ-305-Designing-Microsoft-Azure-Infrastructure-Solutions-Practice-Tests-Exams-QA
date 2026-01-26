@@ -397,23 +397,23 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] a public Azure Load Balancer.
 - [ ] a managed identity.
 - [ ] an internal Azure Load Balancer.
-- [ ] a Conditional Access policy.
-- [ ] an Azure Appp Service pplan.
-- [ ] Azure Ad Application Proxy.
-- [ ] an Azure AD enterpprise application.
+- [x] a Conditional Access policy.
+- [ ] an Azure Appp Service plan.
+- [x] Azure Ad Application Proxy.
+- [x] an Azure AD enterpprise application.
 
 ### You have 100 servers that run Windows Server 2012 R2 and host Microsoft SQL Server 2014 instances. The instances host databases that have the following characteristics: Stored procedures are implemented by using CLR. The largest database is currently 3 TB. None of the databases will ever exceed 4 TB. You plan to move all the data from SQL Server to Azure. You need to recommend a service to host the databases. The solution must meet the following requirements: Whenever possible, minimize management overhead for the migrated databases. Ensure that users can authenticate by using Azure Active Directory (Azure AD) credentials. Minimize the number of database changes required to facilitate the migration. What should you include in the recommendation?
 
 - [ ] Azure SQL Database elastic pools.
-- [ ] Azure SQL Managed Instance.
+- [x] Azure SQL Managed Instance.
 - [ ] Azure SQL Database single databases.
 - [ ] SQL Server 2016 on Azure virtual machines.
 
 ### You have an Azure subscription that contains an Azure Blob Storage account named store1. You have an on-premises file server named Server1 that runs Windows Server 2016. Server1 stores 500 GB of company files. You need to store a copy of the company files from Server1 in store1. Which two possible Azure services achieve this goal?
 
 - [ ] An Azure Logic Apps integration account.
-- [ ] An Azure Import/Export job.
-- [ ] Azure Data Factory.
+- [x] An Azure Import/Export job.
+- [x] Azure Data Factory.
 - [ ] An Azure Analysis services On-premises data gateway.
 - [ ] An Azure Batch account.
 
@@ -422,7 +422,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] One Azure Data Factory pipeline.
 - [ ] Multiple storage account queues.
 - [ ] One Azure Service Bus queue.
-- [ ] One Azure Service Bus topic.
+- [x] One Azure Service Bus topic.
 
 ### You have an Azure subscription that contains the storage accounts shown in the following table. You plan to implement two new apps that have the requirements shown in the following table. Which storage accounts should you recommend using for each app?
 
@@ -430,7 +430,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 63 part 2](images/question63_2.png)
 ![Question 63 part 3](images/question63_3.png)
 
-- [ ] App1: Storagel, storage2, and storage3 only. App2: Storage1, storage2, and storage4 only.
+- [x] App1: Storagel, storage2, and storage3 only. App2: Storage1, storage2, and storage4 only.
 - [ ] App1: Storage1 and storage2 only. App2: Storage1, storage2, and storage4 only.
 - [ ] App1: Storage1 and storage3 only. App2: Storage1 and storage4 only.
 - [ ] App1: Storage1, storage2, storage3, and storage4. App2: Storage1 and storage4 only.
@@ -439,12 +439,12 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Azure Files.
 - [ ] Azure Data Lake Storage Gen2.
-- [ ] Azure Blob Storage.
+- [x] Azure Blob Storage.
 - [ ] Azure SQL Database.
 
 ### You are designing a SQL database solution. The solution will include 20 databases that will be 20 GB each and have varying usage patterns.You need to recommend a database platform to host the databases. The solution must meet the following requirements: The solution must meet a Service Level Agreement (SLA) of 99.99% uptime.The compute resources allocated to the databases must scale dynamically. The solution must have reserved capacity. Compute charges must be minimized. What should you include in the recommendation?
 
-- [ ] An elastic pool that contains 20 Azure SQL databases.
+- [x] An elastic pool that contains 20 Azure SQL databases.
 - [ ] 20 databases on a Microsoft SQL server that runs on an Azure virtual machine in an availability set.
 - [ ] Azure public peering for an ExpressRoute circuit.
 - [ ] 20 instances of Azure SQL Database serverless.
@@ -453,7 +453,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ![Question 66](images/question66.png)
 
-- [ ] Service: Azure SQL Database. Service tier: Hyperscale.
+- [x] Service: Azure SQL Database. Service tier: Hyperscale.
 - [ ] Service: Azure SQL Database. Service tier: Premium.
 - [ ] Service: SQL Server on Azure Virtual Machines. Service tier: Standard.
 - [ ] Service: Azure Synapse Analytics. Service tier: Basic.
@@ -462,12 +462,12 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [ ] Azure Table Storage.
 - [ ] Azure Event Grid.
-- [ ] Azure Cosmos DB SQL API.
-- [ ] Azure Time Series Insights.
+- [x] Azure Cosmos DB SQL API.
+- [x] Azure Time Series Insights.
 
 ### You are designing an application that will aggregate content for users. You need to recommend a database solution for the application. The solution must meet the following requirements: Support SQL commands. Support multi-master writes. Guarantee low latency read operations. What should you include in the recommendation?
 
-- [ ] Azure Cosmos DB SQL API.
+- [x] Azure Cosmos DB SQL API.
 - [ ] Azure SQL Database that uses active geo-replication.
 - [ ] Azure SQL Database Hyperscale.
 - [ ] Azure Database for PostgreSQL.
@@ -478,7 +478,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 69 part 2](images/question69_70_71_2.png)
 ![Question 69 part 3](images/question69_70_71_3.png)
 
-- [ ] Yes.
+- [x] Yes.
 - [ ] No.
 
 ### You have an Azure subscription that contains the SQL servers on Azure shown in the following table. The subscription contains the storage accounts shown in the following table. You create the Azure SQL databases shown in the following table. Question 2: When you enable auditing for SQLdb2, you can store the audit information to storage2
@@ -488,7 +488,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 70 part 3](images/question69_70_71_3.png)
 
 - [ ] Yes.
-- [ ] No.
+- [x] No.
 
 ### You have an Azure subscription that contains the SQL servers on Azure shown in the following table. The subscription contains the storage accounts shown in the following table. You create the Azure SQL databases shown in the following table. Question 3: When you enable auditing for SQLdb3, you can store the audit information to storage2
 
@@ -497,14 +497,14 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 71 part 3](images/question69_70_71_3.png)
 
 - [ ] Yes.
-- [ ] No.
+- [x] No.
 
 ### You have SQL Server on an Azure virtual machine. The databases are written to nightly as part of a batch process. You need to recommend a disaster recovery solution for the data. The solution must meet the following requirements: Provide the ability to recover in the event of a regional outage. Support a recovery time objective (RTO) of 15 minutes. Support a recovery point objective (RPO) of 24 hours. Support automated recovery. Minimize costs. What should you include in the recommendation?
 
 - [ ] Azure virtual machine availability sets.
 - [ ] Azure Disk Backup.
 - [ ] An Always On availability group.
-- [ ] Azure Site Recovery.
+- [x] Azure Site Recovery.
 
 ### You plan to deploy the backup policy shown in the following exhibit
 
@@ -520,17 +520,17 @@ policy is [answer choice]: 1 hour.
 - [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
 [answer choice]: 90 days. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the
 policy is [answer choice]: 1 day.
-- [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
+- [x] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
 [answer choice]: 36 months. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the policy is [answer choice]: 1 day.
 
 ### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you create an Azure Traffic Manager profile. Does this meet the goal?
 
-- [ ] Yes.
+- [x] Yes.
 - [ ] No.
 
 ### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you deploy an Azure Application Gateway
 
-- [ ] Yes.
+- [x] Yes.
 - [ ] No.
 
 ### You plan to create an Azure Storage account that will host file shares. The shares will be accessed from on-premises applications that are transaction-intensive. You need to recommend a solution to minimize latency when accessing the file shares. The solution must provide the highest-level of resiliency for the selected storage tier. What should you include in the recommendation?
@@ -539,26 +539,26 @@ policy is [answer choice]: 1 day.
 
 - [ ] Storage tier: Hot. Redundancy: Locally-redundant storage (LRS).
 - [ ] Storage tier: Premium. Redundancy: Geo-redundant storage (GRS).
-- [ ] Storage tier: Premium. Redundancy: Zone-redundant storage (ZRS).
+- [x] Storage tier: Premium. Redundancy: Zone-redundant storage (ZRS).
 - [ ] Storage tier: Transaction optimized. Redundancy: Zone-redundant storage (ZRS).
 
 ### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy an Azure virtual machine scale set that uses autoscaling
 
 - [ ] Yes.
-- [ ] No.
+- [x] No.
 
 ### You plan to move a web app named App1 from an on-premises datacenter to Azure.App1 depends on a custom COM component that is installed on the host server. You need to recommend a solution to host App1 in Azure. The solution must meet the following requirements: App1 must be available to users if an Azure datacenter becomes unavailable. Costs must be minimized. What should you include in the recommendation?
 
 - [ ] In two Azure regions, deploy a load balancer and a web app.
 - [ ] In two Azure regions, deploy a load balancer and a virtual machine scale set.
 - [ ] Deploy a load balancer and a virtual machine scale set across two availability zones.
-- [ ] In two Azure regions, deploy an Azure Traffic Manager profile and a web app.
+- [x] In two Azure regions, deploy an Azure Traffic Manager profile and a web app.
 
 ### You have an Azure subscription that contains a Basic Azure virtual WAN named VirtualWAN1 and the virtual hubs shown in the following table. You have an ExpressRoute circuit in the US East Azure region. You need to create an ExpressRoute association to VirtualWAN1. What should you do first?
 
 ![Question 79](images/question79.png)
 
-- [ ] Upgrade VirtualWAN1 to Standard.
+- [x] Upgrade VirtualWAN1 to Standard.
 - [ ] Create a gateway on Hub1.
 - [ ] Enable the ExpressRoute premium add-on.
 - [ ] Create a hub virtual network in US East.
