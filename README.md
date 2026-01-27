@@ -629,20 +629,20 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure Service Fabric.
 - [ ] Azure Data Lake.
-- [ ] Azure Service Bus.
+- [x] Azure Service Bus.
 - [ ] Azure Traffic Manager.
 
 ### Your company has 300 virtual machines hosted in a VMware environment. The virtual machines vary in size and have various utilization levels. You plan to move all the virtual machines to Azure. You need to recommend how many and what size Azure virtual machines will be required to move the current workloads to Azure. The solution must minimize administrative effort. What should you use to make the recommendation?
 
 - [ ] Azure Pricing calculator.
 - [ ] Azure Advisor.
-- [ ] Azure Migrate.
+- [x] Azure Migrate.
 - [ ] Azure Cost Management.
 
 ### You plan provision a High Performance Computing (HPC) cluster in Azure that will use a third-party scheduler. You need to recommend a solution to provision and manage the HPC cluster node. What should you include in the recommendation?
 
 - [ ] Azure Automation.
-- [ ] Azure CycleCloud.
+- [x] Azure CycleCloud.
 - [ ] Azure Purview.
 - [ ] Azure Lighthouse
 
@@ -650,42 +650,22 @@ policy is [answer choice]: 1 day.
 
 ![Question 92](images/question92.png)
 
-- [ ] Request routing method: A Traffic Manager profile. Request routing configuration: Priority traffic routing.
+- [x] Request routing method: A Traffic Manager profile. Request routing configuration: Priority traffic routing.
 - [ ] Request routing method: Azure Application Gateway. Request routing configuration: Priority traffic routing.
 - [ ] Request routing method: A Traffic Manager profile. Request routing configuration: Cookie-based session affinity.
 - [ ] Request routing method: Azure Load Balancer. Request routing configuration: Performance traffic routing.
 
-### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 2: The design supports autoscaling
-
-![Question 93](images/question93.jpg)
-
-- [ ] Yes.
-- [ ] No.
-
-### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 3: The design requires a manual configuration if an Azure region fails
-
-![Question 94](images/question94.jpg)
-
-- [ ] Yes.
-- [ ] No.
-
-### Events from Linux system logging
-
-- [ ] AzureActivity.
-- [ ] AzureDiagnostics.
-- [ ] Event.
-- [ ] Syslog.
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Install and configure the Azure Monitoring agent and the Dependency Agent on all the virtual machines. Use VM insights in Azure Monitor to analyze the network traffic. Does this meet the goal?
 
 - [ ] Yes.
-- [ ] No.
+- [x] No.
 
 ### You need to design an architecture to capture the creation of users and the assignment of roles. The captured data must be stored in Azure Cosmos DB. Which services should you include in the design?
 
 - [ ] Azure Event Grid.
-- [ ] Azure Event Hubs.
-- [ ] Azure Functions.
+- [x] Azure Event Hubs.
+- [x] Azure Functions.
 - [ ] Azure Monitor Logs.
 - [ ] Azure Notification Hubs.
 
@@ -762,7 +742,7 @@ policy is [answer choice]: 1 day.
 
 ### You plan to deploy an Azure SQL database that will store Personally Identifiable Information (PII). You need to ensure that only privileged users can view the PII. What should you include in the solution?
 
-- [ ] dynamic data masking.
+- [x] dynamic data masking.
 - [ ] role-based access control (RBAC).
 - [ ] Data Discovery & Classification.
 - [ ] Transparent Data Encryption (TDE).
@@ -770,23 +750,16 @@ policy is [answer choice]: 1 day.
 ### You plan to deploy an app that will use an Azure Storage account. You need to deploy the storage account. The storage account must meet the following requirements: Store the data for multiple users. Encrypt each user's data by using a separate key. Encrypt all the data in the storage account by using customer-managed keys. What should you deploy?
 
 - [ ] files in a premium file share storage account.
-- [ ] blobs in a general purpose v2 storage account.
+- [x] blobs in a general purpose v2 storage account.
 - [ ] blobs in an Azure Data Lake Storage Gen2 account.
 - [ ] files in a general purpose v2 storage account.
-
-### Key Vault integration method
-
-- [ ] Key Vault references in Application settings.
-- [ ] Key Vault references in Appsettings.json.
-- [ ] Key Vault references in Web.config.
-- [ ] Key Vault SDK
 
 ### You plan to deploy an application named App1 that will run on five Azure virtual machines. Additional virtual machines will be deployed later to run App1. You need to recommend a solution to meet the following requirements for the virtual machines that will run App1: Ensure that the virtual machines can authenticate to Azure Active Directory (Azure AD) to gain access to an Azure key vault, Azure Logic Apps instances, and an Azure SQL database. Avoid assigning new roles and permissions for Azure services when you deploy additional virtual machines. Avoid storing secrets and certificates on the virtual machines. Minimize administrative effort for managing identities. Which type of identity should you include in the recommendation?
 
 - [ ] a system-assigned managed identity.
 - [ ] a service principal that is configured to use a certificate.
 - [ ] a service principal that is configured to use a client secret.
-- [ ] a user-assigned managed identity.
+- [x] a user-assigned managed identity.
 
 ### You have the resources shown in the following table: CDB1 hosts a container that stores continuously updated operational data. You are designing a solution that will use AS1 to analyze the operational data daily. You need to recommend a solution to analyze the data without affecting the performance of the operational data store. What should you include in the recommendation?
 
@@ -794,7 +767,7 @@ policy is [answer choice]: 1 day.
 
 - [ ] Azure Cosmos DB change feed.
 - [ ] Azure Data Factory with Azure Cosmos DB and Azure Synapse Analytics connectors.
-- [ ] Azure Synapse Link for Azure Cosmos DB.
+- [x] Azure Synapse Link for Azure Cosmos DB.
 - [ ] Azure Synapse Analytics with PolyBase data loading.
 
 ### The amount of time that SQLInsight data will be stored in blob storage in [...]
@@ -802,27 +775,27 @@ policy is [answer choice]: 1 day.
 - [ ] 30 days.
 - [ ] 90 days.
 - [ ] 730 days.
-- [ ] indefinite.
+- [x] indefinite.
 
 ### The maximum  amount of time that SQLInsights data can be stored in Azure Log Analytics is [...]
 
 - [ ] 30 days.
 - [ ] 90 days.
-- [ ] 730 days.
+- [x] 730 days.
 - [ ] indefinite.
 
 ### You have an application that is used by 6,000 users to validate their vacation requests. The application manages its own credential store. Users must enter a username and password to access the application. The application does NOT support identity providers. You plan to upgrade the application to use single sign-on (SSO) authentication by using an Azure Active Directory (Azure AD) application registration. Which SSO method should you use?
 
 - [ ] header-based.
 - [ ] SAML.
-- [ ] password-based.
+- [x] password-based.
 - [ ] OpenID Connect.
 
 ### You are designing an Azure governance solution. All Azure resources must be easily identifiable based on the following operational information: environment, owner, department and cost center. You need to ensure that you can use the operational information when you generate reports for the Azure resources. What should you include in the solution?
 
 - [ ] an Azure data catalog that uses the Azure REST API as a data source.
 - [ ] an Azure management group that uses parent groups to create a hierarchy.
-- [ ] an Azure policy that enforces tagging rules.
+- [x] an Azure policy that enforces tagging rules.
 - [ ] Azure Active Directory (Azure AD) administrative units.
 
 ### A company named Contoso, Ltd. has an Azure Active Directory (Azure AD) tenant that is integrated with Microsoft 365 and an Azure subscription. Contoso has an on-premises identity infrastructure. The infrastructure includes servers that run Active Directory Domain Services (AD DS) and Azure AD Connect. Contoso has a partnership with a company named Fabrikam. Inc. Fabrikam has an Active Directory forest and a Microsoft 365 tenant. Fabrikam has the same on- premises identity infrastructure components as Contoso. A team of 10 developers from Fabrikam will work on an Azure solution that will be hosted in the Azure subscription of Contoso. The developers must be added to the Contributor role for a resource group in the Contoso subscription. You need to recommend a solution to ensure that Contoso can assign the role to the 10 Fabrikam developers. The solution must ensure that the Fabrikam developers use their existing credentials to access resources What should you recommend?
@@ -847,52 +820,9 @@ policy is [answer choice]: 1 day.
 ### You are developing an app that will read activity logs for an Azure subscription by using Azure Functions. You need to recommend an authentication solution for Azure Functions. The solution must minimize administrative effort. What should you include in the recommendation?
 
 - [ ] an enterprise application in Azure AD.
-- [ ] system-assigned managed identities.
+- [x] system-assigned managed identities.
 - [ ] shared access signatures (SAS).
 - [ ] application registration in Azure AD.
-
-### Configure App1l to use OAuth 2.0 [...]
-
-- [ ] Authorization code grant flows.
-- [ ] Client credentials grant flows.
-- [ ] Implicit grant flows.
-
-### Configure App1 to use a Rest API call to retrieve an authentication token from the [...]
-
-- [ ] Azure Instance Metadata Service (MDS) endpoint.
-- [ ] OAuth 2.0 access token endpoint of Azure AD.
-- [ ] OAuth 2.0 access token endpoint of Microsoft Identity Platform.
-
-### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
-
-![Question 127](images/question127.png)
-
-- [ ] Configure Azure AD join.
-- [ ] Configure Azure AD Identity Protection.
-- [ ] Configure a Conditional Access policy.
-- [ ] Configure Supported account types in the application registration and update the sign-in endpoint.
-
-### Authentication
-
-- [ ] Application registration in Azure AD.
-- [ ] A system-assigned managed identity.
-- [ ] A user-assigned managed identity.
-
-### Authorization
-
-- [ ] Application permissions.
-- [ ] Azure role-based access control (Azure RBAC).
-- [ ] Delegated permissions.
-
-### User2 can grant permissions to Group2
-
-- [ ] Yes.
-- [ ] No.
-
-### User3 can create a storage account in RG2
-
-- [ ] Yes.
-- [ ] No.
 
 ### You have an Azure subscription that contains 1,000 resources. You need to generate compliance reports for the subscription. The solution must ensure that the resources can be grouped by department. What should you use to organize the resources?
 
