@@ -50,7 +50,7 @@
 
 ### Fabrikam, Inc. is an engineering company that has offices throughout Europe. The company has a main office in London and three branch offices in Amsterdam, Berlin, and Rome. The network contains two Active Directory forests named corp.fabrikam.com and rd.fabrikam.com. There are no trust relationships between the forests. Corp.fabrikam.com is a production forest that contains identities used for internal user and computer authentication. Rd.fabrikam.com is used by the research and development (R&D) department only. The R&D department is restricted to using on-premises resources only. Each office contains at least one domain controller from the corp.fabrikam.com domain. The main office contains all the domain controllers for the rd.fabrikam.com forest. All the offices have a high-speed connection to the internet. An existing application named WebApp1 is hosted in the data center of the London office. WebApp1 is used by customers to place and track orders. WebApp1 has a web tier that uses Microsoft Internet information Services (IIS) and a database tier that runs Microsoft SQL Server 2016. The web tier and the database tier are deployed to virtual machines that run on Hyper-V. The IT department currently uses a separate Hyper-V environment to test updates to WebApp1. Fabrikam purchases all Microsoft licenses through a Microsoft Enterprise Agreement that includes Software Assurance. The use of WebApp1 is unpredictable. At peak times, users often report delays. At other times, many resources for WebApp1 are underutilized. Fabrikam plans to move most of its production workloads to Azure during the next few years, including virtual machines that rely on Active Directory for authentication. As one of its first projects, the company plans to establish a hybrid identity model, facilitating an upcoming Microsoft 365 deployment. All R&D operations will remain on-premises. Fabrikam plans to migrate the production and test instances of WebApp1 to Azure. Fabrikam identifies the following technical requirements: Website content must be easily updated from a single point. User input must be minimized when provisioning new web app instances. Whenever possible, existing on-premises licenses must be used to reduce cost. Users must always authenticate by using their corp.fabrikam.com UPN identity. Any new deployments to Azure must be redundant in case an Azure region fails. Whenever possible, solutions must be deployed to Azure by using the Standard pricing tier of Azure App Service. An email distribution group named IT Support must be notified of any issues relating to the directory synchronization services. In the event that a link fails between Azure and the on-premises network, ensure that the virtual machines hosted in Azure can authenticate to Active Directory. Directory synchronization between Azure Active Directory (Azure AD) and corp.fabrikam.com must not be affected by a link failure between Azure and the on- premises network. Fabrikam identifies the following database requirements: Database metrics for the production instance of WebApp1 must be available for analysis so that database administrators can optimize the performance settings. To avoid disrupting customer access, database downtime must be minimized when databases are migrated. Database backups must be retained for a minimum of seven years to meet compliance requirements. Fabrikam identifies the following security requirements: Company information including policies, templates, and data must be inaccessible to anyone outside the company. Users on the on-premises network must be able to authenticate to corp.fabrikam.com if an internet link fails. Administrators must be able authenticate to the Azure portal by using their corp.fabrikam.com credentials. All administrative access to the Azure portal must be secured by using multi-factor authentication (MFA). The testing of WebApp1 updates must not be visible to anyone outside the company. You need to recommend a solution to meet the database retention requirements. What should you recommend?
 
-- [ ] Configure a long-term retention policy for the database.
+- [x] Configure a long-term retention policy for the database.
 - [ ] Configure Azure Site Recovery.
 - [ ] Configure geo replication of the database.
 - [ ] Use automatic Azure SQL Database backups.
@@ -60,7 +60,7 @@
 ![Question 8](images/question8.jpg)
 
 - [ ] Authenticate App1 by using: A service principal. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
-- [ ] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
+- [x] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: An access policy.
 - [ ] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
 - [ ] Authenticate App1 by using: A service principal. Authorize App1 to retrieve Key Vault secrets by using: An access policy.
 
@@ -68,12 +68,10 @@
 
 ![Question 9](images/question9.jpg)
 
-- [ ] Azure Traffic Manager: 1. Azure Application Gateway: 2.
+- [x] Azure Traffic Manager: 1. Azure Application Gateway: 2.
 - [ ] Azure Traffic Manager: 3. Azure Application Gateway: 1.
 - [ ] Azure Traffic Manager: 6. Azure Application Gateway: 3.
 - [ ] Azure Traffic Manager: 1. Azure Application Gateway: 6.
-
-### PLACEHOLDER
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic. Does this meet the goal?
 
@@ -113,7 +111,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Minimum number of Azure AD tenants: 2. Minimum number of custom domains to add: 4. Minimum number of conditional access policies to create: 1
 - [ ] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1 Minimum number of conditional access policies to create: 0.
 - [ ] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1. Minimum number of conditional access policies to create: 2.
-- [ ] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1. Minimum number of conditional access policies to create: 1.
+- [x] Minimum number of Azure AD tenants: 1. Minimum number of custom domains to add: 1. Minimum number of conditional access policies to create: 1.
 
 ### You need to design an architecture to capture the creation of users and the assignment of roles. The captured data must be stored in Azure Cosmos DB. Which Azure services should you include in the design?
 
